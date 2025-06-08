@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    font-family: "Oswald";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8a8c78;
+}
+
+header a{
+    color: white;  
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+
+body {
+    background-color: #859796;;
+}
+
+.logo{
+    background-color: white;
+    width: 4%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 40%;
+}
+
+.burg{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.burg-menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.line{
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav{
+    width: 50%;
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.bx-wrapper {
+    width: 775px;
+}
+
+.slider{
+    font-family: "Oswald";
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #97541e;
+}
+
+.slider-nav > div {
+    float: left;
+    border: 3px solid #fff;
+}
+
+.slider-nav > div a {
+    display: block;
+    cursor: pointer;
+}
+
+.slider-nav > div a.active {
+    border-bottom: 3px solid #000;
+}
+
+@media(max-width: 1500px){
+    header a{
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    nav {
+        width: 80%;
+    }
+}
+
+@media(max-width: 800px){
+    .menu{
+        display: none;
+    }
+    .burg-menu{
+        display: block;
+    }
+    header, nav{
+        flex-direction: column;
+    }
+    .logo{
+        width: 10%;
+        object-fit: contain;
+    }
+}
